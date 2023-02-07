@@ -1,4 +1,4 @@
-//Implementation of a priority queue using a Min Binary Heap
+
 
 
 class Node {
@@ -11,7 +11,7 @@ class PriorityQueue {
     constructor(){
         this.values = [];
     }
-	// basically inserting into a Heap
+	
     enqueue(element){
         this.values.push(element);
         this.bubbleUp();
@@ -28,7 +28,7 @@ class PriorityQueue {
             idx = parentIdx;
         }
     }
-	// similar to extracting the MaxValue, this.values[0]
+
     dequeue() {
         const max = this.values[0]
         const end = this.values.pop()
